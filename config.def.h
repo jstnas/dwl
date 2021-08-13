@@ -63,7 +63,7 @@ static const int natural_scrolling = 0;
 
 /* commands */
 static const char *termcmd[] = { "st", "fish", NULL };
-static const char *menucmd[] = { "bemenu-run", NULL };
+static const char *menucmd[] = { "dmenu-wl_run", NULL };
 static const char *volup[] = { "/home/iota/.local/bin/change_volume", "+", NULL };
 static const char *voldn[] = { "/home/iota/.local/bin/change_volume", "-", NULL };
 
