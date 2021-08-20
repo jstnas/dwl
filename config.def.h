@@ -62,7 +62,7 @@ static const int natural_scrolling = 0;
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
 /* commands */
-static const char *termcmd[] = { "st", "fish", NULL };
+static const char *termcmd[] = { "foot", "fish", NULL };
 static const char *menucmd[] = { "dmenu-wl_run", NULL };
 static const char *volup[] = { "/home/iota/.local/bin/change_volume", "+", NULL };
 static const char *voldn[] = { "/home/iota/.local/bin/change_volume", "-", NULL };
