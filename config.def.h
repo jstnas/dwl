@@ -66,8 +66,7 @@ static const char *termcmd[] = { "foot", "fish", NULL };
 static const char *menucmd[] = { "dmenu-wl_run", NULL };
 static const char *volup[] = { "/home/iota/.local/bin/change_volume", "+", NULL };
 static const char *voldn[] = { "/home/iota/.local/bin/change_volume", "-", NULL };
-static const char *firefoxcmd[] = { "firefox", "-P", "custom", NULL };
-static const char *firefoxaltcmd[] = { "firefox", "-P", "default", NULL };
+static const char *firefoxcmd[] = { "firefox", NULL };
 
 #include "keys.h"
 static const Key keys[] = {
@@ -108,8 +107,6 @@ static const Key keys[] = {
 	{ 0,      Key_XF86AudioRaiseVolume,       spawn,          {.v = volup} },
 	{ 0,      Key_XF86AudioLowerVolume,       spawn,          {.v = voldn} },
 	{ MODKEY,                    Key_f,       spawn,          {.v = firefoxcmd} },
-	{ MODKEY|WLR_MODIFIER_SHIFT, Key_f,       spawn,          {.v = firefoxaltcmd} },
-
 	/* Ctrl-Alt-Backspace and Ctrl-Alt-Fx used to be handled by X server */
 	{ WLR_MODIFIER_CTRL|WLR_MODIFIER_ALT,Key_BackSpace, quit, {0} },
 #define CHVT(KEY,n) { WLR_MODIFIER_CTRL|WLR_MODIFIER_ALT, KEY, chvt, {.ui = (n)} }
